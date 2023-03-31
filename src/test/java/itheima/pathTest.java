@@ -96,13 +96,10 @@ public class pathTest<T> {
 //        }
     }
     @Test
-    void test6(){
-        double i=1D;
-        for (int j=1;j<51;j++){
-            i=i*j;
-            System.out.println(i);
-        }
-        System.out.println(i);
+    public void test6(){
+        String s="234";
+        s="456";
+        System.out.println(s);
     }
 
 

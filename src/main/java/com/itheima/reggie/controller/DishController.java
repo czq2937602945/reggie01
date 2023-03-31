@@ -125,8 +125,12 @@ public class DishController {
         queryWrapper.orderByAsc(Dish::getSort);
         List<Dish> list = dishService.list(queryWrapper);
         return R.success(list);
+    }
 
-
+    @DeleteMapping
+    private R<String> deleteByIds(@RequestParam Long ids){
+        log.info("***********{}",ids);
+        return R.success("删除菜品成功");
     }
 
 }
